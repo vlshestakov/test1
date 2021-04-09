@@ -4,11 +4,15 @@
 package idea.test;
 
 import org.junit.jupiter.api.Test;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+    @Test void testFileExist() {
+        assertTrue( Files.exists(Paths.get("gradlew.bat")));
     }
+
 }
