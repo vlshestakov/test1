@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     @Test void testFileExist() {
+        System.out.printf("\n\nuser.dir: %s\n\n", System.getProperty("user.dir"));
         assertTrue( Files.exists(Paths.get("gradlew.bat")));
     }
 }
