@@ -14,5 +14,4 @@ class AppTest {
     @Test void testFileExist() {
         assertTrue( Files.exists(Paths.get("gradlew.bat")));
     }
-
 }
