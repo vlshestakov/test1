@@ -35,5 +35,6 @@ application {
 tasks.named('test') {
     // Use junit platform for unit tests.
     useJUnitPlatform()
+    System.setProperty("user.dir", projectDir.toString()) // fix for IDEA 2021.1 https://youtrack.jetbrains.com/issue/IDEA-265203
     systemProperties = System.properties
 }
